@@ -37,9 +37,22 @@ nmap ,<Leader> :nohl<CR>
 nmap <Down> 5<C-e>
 nmap <Up> 5<C-y>
 
-" Tab cycling
-nmap <Right> gt<CR>
-nmap <Left> gT<CR>
+" Lightspeed tab switching
+nmap <Leader>1 1gt
+nmap <Leader>2 2gt
+nmap <Leader>3 3gt
+nmap <Leader>4 4gt
+nmap <Leader>5 5gt
+nmap <Leader>6 6gt
+nmap <Leader>7 7gt
+nmap <Leader>8 8gt
+nmap <Leader>9 9gt
+nmap <Leader>0 :tablast<CR> 
+
+" Go to last active tab
+au TabLeave * let g:lasttab = tabpagenr()
+nnoremap <silent> <Leader>l :exe "tabn ".g:lasttab<cr>
+vnoremap <silent> <Leader>l :exe "tabn ".g:lasttab<cr>
 
 " Remove trailing whitespace
 nnoremap <silent> ,s :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -52,7 +65,7 @@ vmap <Tab> <S->>gv
 vmap <S-Tab> <S-<>gv
 
 " Overpowered navigation commands
-nnoremap <M-j> J
+nnoremap <Leader>j J
 nmap K {
 vmap K {
 nmap J }
@@ -63,9 +76,9 @@ nmap L $
 vmap L $
 
 " Auto close brackets
-inoremap {<CR> {<CR>}<Esc>O
-inoremap (<CR> (<CR>)<Esc>O
-inoremap [<CR> [<CR>]<Esc>O
+" inoremap {<CR> {<CR>}<Esc>O
+" inoremap (<CR> (<CR>)<Esc>O
+" inoremap [<CR> [<CR>]<Esc>O
 
 " Consistent yanking
 nnoremap Y y$

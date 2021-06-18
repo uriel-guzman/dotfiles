@@ -6,7 +6,6 @@ call plug#begin('~/.config/plugins')
 
 " Themes 
 Plug 'gruvbox-community/gruvbox'
-Plug 'joshdick/onedark.vim'
 
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
@@ -23,6 +22,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
 Plug 'rafaqz/ranger.vim'
+Plug 'rstacruz/vim-closer'
 Plug 'preservim/nerdtree'
 
 " Git integration
@@ -45,6 +45,7 @@ source $HOME/.config/nvim/plugin_settings/vim-jsx.vim
 source $HOME/.config/nvim/plugin_settings/nerdtree.vim
 source $HOME/.config/nvim/plugin_settings/ultisnips.vim
 source $HOME/.config/nvim/plugin_settings/lightline.vim
+source $HOME/.config/nvim/plugin_settings/vim-closer.vim
 
 " Plugin mappings
 nmap <Leader>m <Plug>(easymotion-s2)
