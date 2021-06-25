@@ -17,7 +17,6 @@ set shiftwidth=2
 set scrolloff=8
 set expandtab
 set autoread
-set termguicolors
 set incsearch
 set ignorecase
 set smartcase
@@ -30,6 +29,7 @@ set splitright
 set linebreak
 set breakat=" "
 set breakindent
+set iskeyword-=-
 set undofile
 set undodir=$HOME/.config/nvim/undo
 set undolevels=1000

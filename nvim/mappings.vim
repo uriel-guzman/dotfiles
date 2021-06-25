@@ -26,16 +26,14 @@ nnoremap <C-l> <C-W><C-L>
 " Easier save/quit commands
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q!<CR>
-nmap ; :
-vmap ; :
-cmap ; :
 
 " Remove highlight
 nmap ,<Leader> :nohl<CR>
 
 " Keyboard scrolling
-nmap <Down> 5<C-e>
-nmap <Up> 5<C-y>
+nmap J 5<C-e>
+nmap K 5<C-y>
+nnoremap <Leader>j <S-j>
 
 " Lightspeed tab switching
 nmap <Leader>1 1gt
@@ -64,22 +62,6 @@ nmap <S-Tab> <S-<><
 vmap <Tab> <S->>gv
 vmap <S-Tab> <S-<>gv
 
-" Overpowered navigation commands
-nnoremap <Leader>j J
-nmap K {
-vmap K {
-nmap J }
-vmap J }
-nmap H ^
-vmap H ^
-nmap L $
-vmap L $
-
-" Auto close brackets
-" inoremap {<CR> {<CR>}<Esc>O
-" inoremap (<CR> (<CR>)<Esc>O
-" inoremap [<CR> [<CR>]<Esc>O
-
 " Consistent yanking
 nnoremap Y y$
 
@@ -98,40 +80,19 @@ nmap <silent> <C-Right> :vertical resize +2<CR>
 
 " Prefer visual lines
 nnoremap j gj
-nnoremap gj j
-
 nnoremap k gk
-nnoremap gk k
-
 nnoremap 0 g0
-nnoremap g0 0
-
 nnoremap $ g$
-nnoremap g$ $
-
 nnoremap ^ g^
-nnoremap g^ ^
 
 vnoremap j gj
-vnoremap gj j
-
 vnoremap k gk
-vnoremap gk k
-
 vnoremap 0 g0
-vnoremap g0 0
-
 vnoremap $ g$
-vnoremap g$ $
-
 vnoremap ^ g^
-vnoremap g^ ^
 
-" Better macros, who even uses Q?
-nmap Q @q
-
-" Keep replacing the same text object
-nmap R /<C-R>+<CR>.
+" Annoying
+map Q <Nop>
 
 " Fast editing of init.vim
 nmap <Leader>v :e ~/.config/nvim/init.vim<CR>
