@@ -23,6 +23,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
 Plug 'rstacruz/vim-closer'
 Plug 'preservim/nerdtree'
+Plug 'frazrepo/vim-rainbow'
 
 " Git integration
 Plug 'mhinz/vim-signify'
@@ -40,6 +41,7 @@ source $HOME/.config/nvim/plugin_settings/fzf.vim
 source $HOME/.config/nvim/plugin_settings/nerdtree.vim
 source $HOME/.config/nvim/plugin_settings/lightline.vim
 source $HOME/.config/nvim/plugin_settings/vim-closer.vim
+source $HOME/.config/nvim/plugin_settings/rainbow.vim
 
 " Plugin mappings
 nmap <Leader>m <Plug>(easymotion-s2)
