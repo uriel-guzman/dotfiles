@@ -144,7 +144,7 @@ alias icpc='cd /home/uriel/ICPC/'
 alias bashrc='nvim ~/.bashrc'
 alias bashcom='source ~/.bashrc'
 alias cucei='cd /home/uriel/CUCEI'
-alias nvim="/usr/bin/neovim5.0"
+alias nvim="/usr/bin/neovim"
 
 #########shortcuts.txt#########
 red='\x1B[0;31m'

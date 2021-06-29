@@ -7,6 +7,7 @@ source $HOME/.config/nvim/plugin_settings/pear-tree.vim
 source $HOME/.config/nvim/plugin_settings/rainbow.vim
 source $HOME/.config/nvim/plugin_settings/undotree.vim
 source $HOME/.config/nvim/plugin_settings/vim-commentary.vim
+source $HOME/.config/nvim/plugin_settings/nvim-explorer.vim
 
 " LSP
 source $HOME/.config/nvim/lsp/lsp-config.vim

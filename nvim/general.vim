@@ -35,6 +35,7 @@ set undodir=$HOME/.config/nvim/undo
 set undolevels=1000
 set undoreload=10000
 set display+=lastline
+set termguicolors
 syntax enable
 runtime macros/matchit.vim
 colorscheme gruvbox

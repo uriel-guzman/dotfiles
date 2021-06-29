@@ -25,6 +25,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'lilydjwg/colorizer'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Git integration
 Plug 'airblade/vim-gitgutter'
