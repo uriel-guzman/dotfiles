@@ -1,3 +1,6 @@
+" Leader key
+let mapleader = ' '
+
 " Competitive programming
 nmap <Leader>a o<Esc>:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 nmap <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohl<CR>
@@ -16,12 +19,6 @@ autocmd filetype cpp nnoremap <F7> :w \| :sp \| term random %:r<CR>
 nmap <Leader>y :%y+<CR>
 nmap <Leader>p :%d_<CR>P
 nmap <Leader>d :%d<CR>
-
-" Move between splits
-nnoremap <C-h> <C-W><C-H>
-nnoremap <C-j> <C-W><C-J>
-nnoremap <C-k> <C-W><C-K>
-nnoremap <C-l> <C-W><C-L>
 
 " Easier save/quit commands
 nmap <Leader>w :w<CR>
