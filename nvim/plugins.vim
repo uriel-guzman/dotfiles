@@ -5,10 +5,10 @@ let mapleader = ' '
 call plug#begin('~/.config/plugins')
 
 " Themes 
-Plug 'gruvbox-community/gruvbox'
+Plug 'sainnhe/gruvbox-material'
 
 " Syntax highlighting
-Plug 'sheerun/vim-polyglot'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -19,7 +19,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
 Plug 'mbbill/undotree'
-Plug 'frazrepo/vim-rainbow'
 Plug 'tmsvg/pear-tree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lilydjwg/colorizer'

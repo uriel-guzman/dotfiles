@@ -8,6 +8,7 @@ source $HOME/.config/nvim/plugin_settings/rainbow.vim
 source $HOME/.config/nvim/plugin_settings/undotree.vim
 source $HOME/.config/nvim/plugin_settings/vim-commentary.vim
 source $HOME/.config/nvim/plugin_settings/nvim-explorer.vim
+luafile $HOME/.config/nvim/plugin_settings/treesitter.lua
 
 " LSP
 source $HOME/.config/nvim/lsp/lsp-config.vim

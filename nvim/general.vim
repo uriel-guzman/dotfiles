@@ -38,4 +38,5 @@ set display+=lastline
 set termguicolors
 syntax enable
 runtime macros/matchit.vim
-colorscheme gruvbox
+colorscheme gruvbox-material
+set background=dark
