@@ -26,6 +26,7 @@ require("telescope").setup {
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },
       n = {
+        ["<C-c>"] = false,
         -- ["<esc>"] = actions.close,
         -- ["<C-i>"] = my_cool_custom_action,
       },

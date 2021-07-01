@@ -11,7 +11,6 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " IDE
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
@@ -25,6 +24,7 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'glepnir/dashboard-nvim'
+Plug 'ahmedkhalf/lsp-rooter.nvim'
 
 "Telescope
 Plug 'nvim-lua/popup.nvim'
@@ -32,7 +32,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Git integration
-Plug 'airblade/vim-gitgutter'
+Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 
 " Competitive programming
