@@ -63,7 +63,9 @@ vmap <S-Tab> <S-<>gv
 nnoremap Y y$
 
 " Escape key
-tmap <C-c> <C-\><C-n>
+tnoremap <C-c> <C-\><C-n>
+inoremap <C-c> <Esc>
+cnoremap <C-c> <Esc>
 
 " Move blocks of selected text
 vmap <C-j> :m '>+1<CR>gv=gv

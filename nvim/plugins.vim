@@ -19,12 +19,15 @@ Plug 'mbbill/undotree'
 Plug 'tmsvg/pear-tree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lilydjwg/colorizer'
-Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'glepnir/dashboard-nvim'
 Plug 'ahmedkhalf/lsp-rooter.nvim'
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
 
 "Telescope
 Plug 'nvim-lua/popup.nvim'
