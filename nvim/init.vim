@@ -2,7 +2,6 @@
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/plugin_settings/easymotion.vim
 source $HOME/.config/nvim/plugin_settings/lightline.vim
-source $HOME/.config/nvim/plugin_settings/pear-tree.vim
 source $HOME/.config/nvim/plugin_settings/rainbow.vim
 source $HOME/.config/nvim/plugin_settings/undotree.vim
 source $HOME/.config/nvim/plugin_settings/vim-commentary.vim
@@ -16,6 +15,8 @@ luafile $HOME/.config/nvim/plugin_settings/galaxyline.lua
 luafile $HOME/.config/nvim/plugin_settings/gitsigns.lua
 luafile $HOME/.config/nvim/plugin_settings/lsp-rooter.lua
 luafile $HOME/.config/nvim/plugin_settings/lsp-install.lua
+luafile $HOME/.config/nvim/plugin_settings/colorizer.lua
+luafile $HOME/.config/nvim/plugin_settings/autopairs.lua
 
 " General
 source $HOME/.config/nvim/general.vim
