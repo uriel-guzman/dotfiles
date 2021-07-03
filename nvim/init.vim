@@ -19,6 +19,7 @@ luafile $HOME/.config/nvim/plugin_settings/lsp-rooter.lua
 luafile $HOME/.config/nvim/plugin_settings/lsp-install.lua
 luafile $HOME/.config/nvim/plugin_settings/colorizer.lua
 luafile $HOME/.config/nvim/plugin_settings/autopairs.lua
+luafile $HOME/.config/nvim/plugin_settings/lightbulb.lua
 
 " General
 source $HOME/.config/nvim/general.vim

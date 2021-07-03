@@ -25,8 +25,8 @@ let g:rnvimr_shadow_winblend = 70
 " " Link CursorLine into RnvimrNormal highlight in the Floating window
 " highlight link RnvimrNormal CursorLine
 
-nnoremap <silent> <Leader>r :RnvimrToggle<CR>
-tnoremap <silent> <Leader>r <C-\><C-n>:RnvimrToggle<CR>
+nnoremap <silent> <Leader>rr :RnvimrToggle<CR>
+tnoremap <silent> <Leader>rr <C-\><C-n>:RnvimrToggle<CR>
 
 "" Map Rnvimr action
 "let g:rnvimr_action = {

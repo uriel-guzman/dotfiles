@@ -141,8 +141,6 @@ export EDITOR=nvim;
 alias vim='cd ~/.config/nvim'
 alias repo='cd /home/uriel/The\ Empire\ Strikes\ Back/'
 alias icpc='cd /home/uriel/ICPC/'
-alias bashrc='nvim ~/.bashrc'
-alias bashcom='source ~/.bashrc'
 alias cucei='cd /home/uriel/CUCEI'
 alias nvim="/usr/bin/neovim"
 

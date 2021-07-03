@@ -20,6 +20,7 @@ Plug 'glepnir/dashboard-nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
 Plug 'kevinhwang91/rnvimr'
+Plug 'kosayoda/nvim-lightbulb'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
