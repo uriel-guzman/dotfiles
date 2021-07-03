@@ -19,6 +19,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'glepnir/dashboard-nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
+Plug 'kevinhwang91/rnvimr'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -31,10 +32,11 @@ Plug 'kabouzeid/nvim-lspinstall'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'p00f/nvim-ts-rainbow'
+Plug 'romgrk/barbar.nvim'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-compe'
-" Plug 'tmsvg/pear-tree'
 Plug 'windwp/nvim-autopairs'
 
 " Telescope

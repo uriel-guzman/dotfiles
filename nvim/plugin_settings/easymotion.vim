@@ -1,1 +1,1 @@
-nmap <Leader>m <Plug>(easymotion-s2)
+nmap s <Plug>(easymotion-s2)
