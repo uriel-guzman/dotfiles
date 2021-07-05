@@ -89,8 +89,9 @@ set termguicolors
 " Built-in plugin for using % on divs 
 runtime macros/matchit.vim
 
-" Colorscheme
-colorscheme gruvbox-material
+" Distracting underlines in error messages
+au ColorScheme * hi ErrorText NONE
 
 " Dark background 
 set background=dark
+
