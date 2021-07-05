@@ -1,12 +1,12 @@
 require'nvim-treesitter.configs'.setup {
   highlight = {
-    enable = true, 
+    enable = true,
   },
   indent = {
-    enable = true,
+    enable = false, -- unstable indenting
   },
   incremental_selection = {
-    enable = true,
+    enable = false, -- don't really use this at all
     keymaps = {
       init_selection = "gnn",
       node_incremental = "grn",

@@ -14,13 +14,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'ahmedkhalf/lsp-rooter.nvim'
-Plug 'mbbill/undotree'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'glepnir/dashboard-nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
-Plug 'kevinhwang91/rnvimr'
-Plug 'kosayoda/nvim-lightbulb'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -30,11 +26,11 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
 
 " Aesthetics
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'p00f/nvim-ts-rainbow'
-Plug 'romgrk/barbar.nvim'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-compe'
