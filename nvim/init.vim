@@ -7,7 +7,6 @@ source $HOME/.config/nvim/plugin_settings/nvim-tree.vim
 source $HOME/.config/nvim/plugin_settings/lsp-config.vim
 source $HOME/.config/nvim/plugin_settings/barbar.vim
 source $HOME/.config/nvim/plugin_settings/indent-line.vim
-source $HOME/.config/nvim/plugin_settings/gruvbox-material.vim
 
 luafile $HOME/.config/nvim/plugin_settings/treesitter.lua
 luafile $HOME/.config/nvim/plugin_settings/compe-config.lua

@@ -58,6 +58,9 @@ set autowrite
 " Don't reindent on the # symbol for C/C++ 
 set cinkeys-=0#
 
+" Don't add double indentation on unclosed parenthesis 
+autocmd FileType cpp setlocal cindent cino=j1,(0,ws,Ws
+
 " Show the tab line 
 set showtabline=2
 
@@ -89,9 +92,14 @@ set termguicolors
 " Built-in plugin for using % on divs 
 runtime macros/matchit.vim
 
-" Distracting underlines in error messages
+" Distracting underlines in information messages
 au ColorScheme * hi ErrorText NONE
+au ColorScheme * hi WarningText NONE
+au ColorScheme * hi HintText NONE
 
-" Dark background 
+" Colorscheme
+colorscheme gruvbox-material
 set background=dark
-
+ 
+" Cursor line
+set cursorline
