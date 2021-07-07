@@ -1,8 +1,6 @@
 " Leader key
 let mapleader = ' '
 
-set termguicolors
-
 " Plugins
 call plug#begin('~/.config/plugins')
 
@@ -12,14 +10,14 @@ Plug 'sainnhe/gruvbox-material'
 " Extra functionality
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'ahmedkhalf/lsp-rooter.nvim'
+Plug 'terrortylor/nvim-comment'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'simrat39/symbols-outline.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -28,7 +26,6 @@ Plug 'kabouzeid/nvim-lspinstall'
 " Aesthetics
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
-" Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'norcalli/nvim-colorizer.lua'
 
