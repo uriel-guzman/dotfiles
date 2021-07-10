@@ -17,7 +17,6 @@ Plug 'easymotion/vim-easymotion'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'simrat39/symbols-outline.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'

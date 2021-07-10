@@ -25,9 +25,14 @@ nmap ,<Leader> :nohl<CR>
 " Keyboard scrolling
 nnoremap J 5<C-e>
 nnoremap K 5<C-y>
-nnoremap L 10zl
-nnoremap H 10zh
 nnoremap <Leader>j <S-j>
+
+" Better indentation 
+nmap <Tab> >>
+nmap <S-Tab> <<
+
+vmap <Tab> >gv
+vmap <S-Tab> <gv
 
 " Tab cycling
 nmap <A-l> :tabnext<CR>
@@ -48,8 +53,12 @@ vnoremap < <gv
 " Consistent yanking
 nnoremap Y y$
 
-" Terminal mode escape key
-tnoremap <C-[> <C-\><C-n>
+" Escape key
+tnoremap <C-c> <C-\><C-n>
+inoremap <C-c> <Esc>
+cnoremap <C-c> <Esc>
+nnoremap <C-c> <Esc>
+onoremap <C-c> <Esc>
 
 " Move blocks of selected text
 vmap <C-j> :m '>+1<CR>gv=gv
@@ -60,6 +69,19 @@ nmap <silent> <C-Up> :resize -2<CR>
 nmap <silent> <C-Down> :resize +2<CR>
 nmap <silent> <C-Left> :vertical resize -2<CR>
 nmap <silent> <C-Right> :vertical resize +2<CR>
+
+" Prefer visual lines
+nnoremap j gj
+nnoremap k gk
+nnoremap 0 g0
+nnoremap $ g$
+nnoremap ^ g^
+
+vnoremap j gj
+vnoremap k gk
+vnoremap 0 g0
+vnoremap $ g$
+vnoremap ^ g^
 
 " Annoying
 map Q <Nop>

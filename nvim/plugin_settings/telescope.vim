@@ -13,6 +13,7 @@ require("telescope").setup {
         -- To disable a keymap, put [map] = false
         -- So, to not map "<C-n>", just put
         -- ["<C-n>"] = false,
+           ["<C-c>"] = false,
 
         -- doesn't work, wtf
         -- ["<esc>"] = actions.select_default,
@@ -21,6 +22,7 @@ require("telescope").setup {
         -- ["<C-i>"] = actions.select_horizontal,
 
 
+           ["<C-c>"] = false,
         -- You can perform as many actions in a row as you like
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },

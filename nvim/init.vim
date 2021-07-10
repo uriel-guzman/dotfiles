@@ -13,7 +13,6 @@ luafile $HOME/.config/nvim/plugin_settings/gitsigns.lua
 luafile $HOME/.config/nvim/plugin_settings/lsp-install.lua
 luafile $HOME/.config/nvim/plugin_settings/colorizer.lua
 luafile $HOME/.config/nvim/plugin_settings/autopairs.lua
-luafile $HOME/.config/nvim/plugin_settings/symbols-outline.lua
 luafile $HOME/.config/nvim/plugin_settings/nvim-commentary.lua
 
 " General

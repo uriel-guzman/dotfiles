@@ -1,6 +1,6 @@
 " Move to previous/next
-nnoremap <silent>    <S-Tab> :BufferPrevious<CR>
-nnoremap <silent>    <Tab> :BufferNext<CR>
+nnoremap <silent>    H :BufferPrevious<CR>
+nnoremap <silent>    L :BufferNext<CR>
 
 " Re-order to previous/next
 " nnoremap <silent>    <A-h> :BufferMovePrevious<CR>
@@ -19,7 +19,7 @@ nnoremap <silent>    <Tab> :BufferNext<CR>
 " nnoremap <silent>    <A-0> :BufferLast<CR>
 
 " Close buffer
-nnoremap <silent>    <C-x> :BufferDelete!<CR>
+nnoremap <silent>    X :BufferDelete!<CR>
 
 " Wipeout buffer
 "                          :BufferWipeout<CR>
