@@ -12,8 +12,10 @@ autocmd filetype vim nnoremap <F5> :source ~/.config/nvim/init.vim<CR>
 autocmd filetype cpp nnoremap <F6> :w \| :sp \| term debug %:r %:h/in<CR>
 autocmd filetype cpp nnoremap <F7> :w \| :sp \| term random %:r<CR>
 
-" Select whole file
-nmap <C-a> ggVG
+" Apply operation to the whole file
+nmap <Leader>y :%y+<CR>
+nmap <Leader>p :%d_<CR>P
+nmap <Leader>d :%d<CR>
 
 " Easier save/quit commands
 nmap <Leader>w :w<CR>
@@ -46,19 +48,13 @@ vnoremap <silent> <Leader>l :exe "tabn ".g:lasttab<cr>
 " Remove trailing whitespace
 nnoremap <silent> ,s :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
-" Better indentation
-vnoremap > >gv
-vnoremap < <gv
-
 " Consistent yanking
 nnoremap Y y$
 
 " Escape key
 tnoremap <C-c> <C-\><C-n>
+noremap <C-c> <Esc>
 inoremap <C-c> <Esc>
-cnoremap <C-c> <Esc>
-nnoremap <C-c> <Esc>
-onoremap <C-c> <Esc>
 
 " Move blocks of selected text
 vmap <C-j> :m '>+1<CR>gv=gv
