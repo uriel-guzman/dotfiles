@@ -19,7 +19,7 @@ nnoremap <silent>    L :BufferNext<CR>
 " nnoremap <silent>    <A-0> :BufferLast<CR>
 
 " Close buffer
-nnoremap <silent>    X :BufferDelete!<CR>
+nnoremap <silent>    <Leader>x :BufferDelete!<CR>
 
 " Wipeout buffer
 "                          :BufferWipeout<CR>

@@ -20,3 +20,4 @@ source $HOME/.config/nvim/general.vim
 
 " Mappings
 source $HOME/.config/nvim/mappings.vim
+
