@@ -4,7 +4,6 @@ set hidden                                                   " Hide buffers inst
 set title                                                    " Show file title in window
 set noshowcmd                                                " Don't show recent commands
 set noequalalways                                            " Don't resize windows when splitting or closing a window
-set mouse=a                                                  " Enable mouse integration
 set numberwidth=1                                            " Number line width
 set clipboard=unnamedplus                                    " Copy and paste from system clipboard 
 set ruler                                                    " Show line/column/percentage 
@@ -17,11 +16,10 @@ set incsearch                                                " Incremental highl
 set ignorecase                                               " Ignore case when searching a pattern 
 set smartcase                                                " If the first letter of a pattern is uppercase, overwrite ignorecase
 set autowrite                                                " Save file if modified 
-set cinkeys-=0#                                              " Don't reindent on the # symbol for C/C++ 
 set showtabline=2                                            " Show the tab line 
 set splitbelow                                               " Open horizontal split below 
 set splitright                                               " Open vertical split to the right 
-set linebreak breakat=   " "                                 " Wrap lines on spaces only 
+set linebreak breakat=" "                                    " Wrap lines on spaces only 
 set breakindent                                              " Visually indent wrapped lines
 set undofile                                                 " Persistent undoing
 set undodir=$HOME/.config/nvim/undo                          " Undo directory location

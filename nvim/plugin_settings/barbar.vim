@@ -1,6 +1,6 @@
 " Move to previous/next
-nnoremap <silent>    H :BufferPrevious<CR>
-nnoremap <silent>    L :BufferNext<CR>
+nnoremap <silent>    <Tab> :BufferNext<CR>
+nnoremap <silent>    <S-Tab> :BufferPrevious<CR>
 
 " Re-order to previous/next
 " nnoremap <silent>    <A-h> :BufferMovePrevious<CR>
