@@ -32,8 +32,8 @@ set background=dark                                          " background color
 runtime macros/matchit.vim                                   " Built-in plugin for using % on divs 
 
 " Distracting underlines in information messages
-au ColorScheme * hi ErrorText NONE 
-au ColorScheme * hi WarningText NONE
-au ColorScheme * hi HintText NONE
+autocmd ColorScheme * highlight ErrorText NONE 
+autocmd ColorScheme * highlight WarningText NONE
+autocmd ColorScheme * highlight HintText NONE
 
 colorscheme gruvbox-material                                 " Colorscheme

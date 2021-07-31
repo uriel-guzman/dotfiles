@@ -21,6 +21,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
+Plug 'hrsh7th/nvim-compe'
 
 " Aesthetics
 Plug 'kyazdani42/nvim-web-devicons'
@@ -28,8 +29,7 @@ Plug 'romgrk/barbar.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'norcalli/nvim-colorizer.lua'
 
-" Autocompletion
-Plug 'hrsh7th/nvim-compe'
+" Autoclosing
 Plug 'windwp/nvim-autopairs'
 
 " Telescope

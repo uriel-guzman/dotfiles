@@ -1,15 +1,15 @@
 " Competitive programming
-nmap <Leader>a o<Esc>:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
-nmap <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohl<CR>
-nmap <Leader>i :vsp %:h/in \| vertical resize 25<CR>
+nnoremap <Leader>a o<Esc>:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
+nnoremap <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
+nnoremap <Leader>i :vsplit %:h/in \| vertical resize 25<CR>
 
 " Apply operation to the whole file
-nmap <Leader>y :%y+<CR>
-nmap <Leader>p :%d_<CR>P
-nmap <Leader>d :%d<CR>
+nnoremap <Leader>y :%y+<CR>
+nnoremap <Leader>p :%d_<CR>P
+nnoremap <Leader>d :%d<CR>
 
 " Remove highlight
-nmap ,<Leader> :nohl<CR>
+nnoremap ,<Leader> :nohlsearch<CR>
 
 " Keyboard scrolling
 nnoremap J 5<C-e>
@@ -22,24 +22,24 @@ vnoremap > >gv
 vnoremap < <gv
 
 " Tab cycling
-nmap L :tabnext<CR>
-nmap H :tabprev<CR>
+nnoremap L :tabnext<CR>
+nnoremap H :tabprev<CR>
 
 " Consistent yanking
 nnoremap Y y$
 
-" Terminal key
+" Terminal escape key
 tnoremap <C-[> <C-\><C-n>
 
 " Move blocks of selected text
-vmap <C-j> :m '>+1<CR>gv=gv
-vmap <C-k> :m '<-2<CR>gv=gv
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Resizing windows
-nmap <Silent> <C-Up> :resize -2<CR>
-nmap <Silent> <C-Down> :resize +2<CR>
-nmap <Silent> <C-Left> :vertical resize -2<CR>
-nmap <Silent> <C-Right> :vertical resize +2<CR>
+nnoremap <Silent> <C-Up> :resize -2<CR>
+nnoremap <Silent> <C-Down> :resize +2<CR>
+nnoremap <Silent> <C-Left> :vertical resize -2<CR>
+nnoremap <Silent> <C-Right> :vertical resize +2<CR>
 
 " Prefer visual lines
 nnoremap j gj
@@ -55,9 +55,11 @@ vnoremap $ g$
 vnoremap ^ g^
 
 " Annoying
-map Q <Nop>
+nnoremap Q <Nop>
 
 " Fast editing of init.vim
-nmap <Leader>v :e ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>ve :edit ~/.config/nvim/init.vim<CR>
 
-autocmd! BufWritePost $MYVIMRC nested source $MYVIMRC
+" Fast path changing
+nnoremap \v :cd ~/.config/nvim<CR>
+nnoremap \i :cd ~/ICPC<CR>
