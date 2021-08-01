@@ -17,9 +17,9 @@ let g:nvim_tree_show_icons = {
     \ 'folder_arrows': 1,
     \ }
 
-nnoremap <leader>ee :NvimTreeToggle<CR>
-nnoremap <leader>er :NvimTreeRefresh<CR>
-nnoremap <leader>ef :NvimTreeFindFile<CR>
+nnoremap <Leader>ee :NvimTreeToggle<CR>
+nnoremap <Leader>er :NvimTreeRefresh<CR>
+nnoremap <Leader>ef :NvimTreeFindFile<CR>
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue

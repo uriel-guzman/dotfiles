@@ -12,18 +12,15 @@ nnoremap <Leader>d :%d<CR>
 nnoremap ,<Leader> :nohlsearch<CR>
 
 " Keyboard scrolling
-nnoremap J 5<C-e>
-nnoremap K 5<C-y>
+nnoremap <A-j> 5<C-e>
+nnoremap <A-k> 5<C-y>
 
-nnoremap <Leader>j <S-j>
+vnoremap <A-j> 5<C-e>
+vnoremap <A-k> 5<C-y>
 
 " Better indentation
 vnoremap > >gv
 vnoremap < <gv
-
-" Tab cycling
-nnoremap L :tabnext<CR>
-nnoremap H :tabprev<CR>
 
 " Consistent yanking
 nnoremap Y y$
@@ -32,14 +29,14 @@ nnoremap Y y$
 tnoremap <C-[> <C-\><C-n>
 
 " Move blocks of selected text
-vnoremap <C-j> :m '>+1<CR>gv=gv
-vnoremap <C-k> :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 " Resizing windows
-nnoremap <Silent> <C-Up> :resize -2<CR>
-nnoremap <Silent> <C-Down> :resize +2<CR>
-nnoremap <Silent> <C-Left> :vertical resize -2<CR>
-nnoremap <Silent> <C-Right> :vertical resize +2<CR>
+nnoremap <silent> <C-Up> :resize -2<CR>
+nnoremap <silent> <C-Down> :resize +2<CR>
+nnoremap <silent> <C-Left> :vertical resize -2<CR>
+nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
 " Prefer visual lines
 nnoremap j gj
@@ -57,8 +54,10 @@ vnoremap ^ g^
 " Annoying
 nnoremap Q <Nop>
 
+" Commodities
+
 " Fast editing of init.vim
-nnoremap <Leader>ve :edit ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>v :edit ~/.config/nvim/init.vim<CR>
 
 " Fast path changing
 nnoremap \v :cd ~/.config/nvim<CR>
