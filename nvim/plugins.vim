@@ -1,4 +1,4 @@
-call plug#begin('vim-plug')
+call plug#begin('~/.config/nvim/vim-plug')
 
 " Themes 
 Plug 'sainnhe/gruvbox-material'
