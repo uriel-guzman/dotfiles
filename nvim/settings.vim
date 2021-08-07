@@ -30,9 +30,16 @@ set cursorline                           " Cursor line
 set lazyredraw                           " Prevents flickering when using macros/mappings 
 runtime macros/matchit.vim               " Built-in plugin for using % on divs 
 
+" Leader key
+let mapleader = ' '
+
 " Distracting underlines in information messages
 autocmd ColorScheme * highlight ErrorText NONE 
 autocmd ColorScheme * highlight WarningText NONE
 autocmd ColorScheme * highlight HintText NONE
 
-colorscheme gruvbox-material             " Colorscheme
+" Disable autocommenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o 
+
+" Colorscheme
+colorscheme gruvbox-material

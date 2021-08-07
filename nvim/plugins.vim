@@ -1,8 +1,4 @@
-" Leader key
-let mapleader = ' '
-
-" Plugins
-call plug#begin('~/.config/plugins')
+call plug#begin('vim-plug')
 
 " Themes 
 Plug 'sainnhe/gruvbox-material'

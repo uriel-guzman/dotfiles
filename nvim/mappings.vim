@@ -8,8 +8,11 @@ nnoremap <Leader>y :%y+<CR>
 nnoremap <Leader>p :%d_<CR>P
 nnoremap <Leader>d :%d<CR>
 
+" Paste without losing previously yanked text 
+vnoremap <Leader>p "_dP
+
 " Remove highlight
-nnoremap ,<Leader> :nohlsearch<CR>
+nnoremap <Leader>, :nohlsearch<CR>
 
 " Keyboard scrolling
 nnoremap <A-j> 5<C-e>
@@ -29,8 +32,8 @@ nnoremap Y y$
 tnoremap <C-[> <C-\><C-n>
 
 " Move blocks of selected text
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :move '>+1<CR>gv=gv
+vnoremap K :move '<-2<CR>gv=gv
 
 " Resizing windows
 nnoremap <silent> <C-Up> :resize -2<CR>
