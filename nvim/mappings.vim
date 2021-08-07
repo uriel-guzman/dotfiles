@@ -1,12 +1,13 @@
+" Leader key
+let mapleader = ' '
+
 " Competitive programming
 nnoremap <Leader>a o<Esc>:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 nnoremap <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
 nnoremap <Leader>i :vsplit %:h/in \| vertical resize 25<CR>
 
-" Apply operation to the whole file
-nnoremap <Leader>y :%y+<CR>
-nnoremap <Leader>p :%d_<CR>P
-nnoremap <Leader>d :%d<CR>
+" Select whole file
+nnoremap <Leader>s ggVG
 
 " Paste without losing previously yanked text 
 vnoremap <Leader>p "_dP
