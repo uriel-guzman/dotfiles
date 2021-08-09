@@ -52,7 +52,7 @@ let bufferline.auto_hide = v:false
 let bufferline.tabpages = v:true
 
 " Enable/disable close button
-let bufferline.closable = v:false
+let bufferline.closable = v:true
 
 " Enables/disable clickable tabs
 "  - left-click: go to buffer
@@ -69,10 +69,10 @@ let bufferline.icons = v:true
 let bufferline.icon_custom_colors = v:false
 
 " Configure icons on the bufferline.
-let bufferline.icon_separator_active = '▎'
-let bufferline.icon_separator_inactive = '▎'
-let bufferline.icon_close_tab = ''
-let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_separator_active = ' '
+let bufferline.icon_separator_inactive = ' '
+let bufferline.icon_close_tab = ''
+let bufferline.icon_close_tab_modified = '+'
 
 " Sets the maximum padding width with which to surround each tab.
 let bufferline.maximum_padding = 4
