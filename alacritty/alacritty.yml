@@ -1,0 +1,95 @@
+cursor:
+  style:
+    blinking: Never
+    shape: Beam
+
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+
+  size: 14.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 0
+    y: 0
+
+  dimensions:
+    columns: 125
+    lines: 35
+
+  decorations: full
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  multiplier: 10
+
+selection:
+  save_to_clipboard: true
+
+live_config_reload: true
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # COLORSCHEME: base16-gruvbox-dark-medium-256.yml
+  # Default colors
+  primary:
+    background: '0x282828'
+    foreground: '0xd5c4a1'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x282828'
+    cursor: '0xd5c4a1'
+
+  # Normal colors
+  normal:
+    black: '0x282828'
+    red: '0xfb4934'
+    green: '0xb8bb26'
+    yellow: '0xfabd2f'
+    blue: '0x83a598'
+    magenta: '0xd3869b'
+    cyan: '0x8ec07c'
+    white: '0xd5c4a1'
+
+  # Bright colors
+  bright:
+    black: '0x665c54'
+    red: '0xfb4934'
+    green: '0xb8bb26'
+    yellow: '0xfabd2f'
+    blue: '0x83a598'
+    magenta: '0xd3869b'
+    cyan: '0x8ec07c'
+    white: '0xfbf1c7'
+
+  indexed_colors:
+    - {index: 16, color: '0xfe8019'}
+    - {index: 17, color: '0xd65d0e'}
+    - {index: 18, color: '0x3c3836'}
+    - {index: 19, color: '0x504945'}
+    - {index: 20, color: '0xbdae93'}
+    - {index: 21, color: '0xebdbb2'}
