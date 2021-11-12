@@ -1,3 +1,5 @@
+set nohlsearch                           " Disable highlighting 
+set mouse=a                              " Enable mouse
 set number                               " Show line numbers 
 set relativenumber                       " Show relative line numbers 
 set ssop-=buffers                        " Delete all buffers on a new session
