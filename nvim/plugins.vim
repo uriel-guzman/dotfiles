@@ -17,13 +17,22 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'kabouzeid/nvim-lspinstall'
-Plug 'hrsh7th/nvim-compe'
+
+" Autocompletion
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
 
 " Aesthetics
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 Plug 'norcalli/nvim-colorizer.lua'
+
+" Formatting
+Plug 'rhysd/vim-clang-format'
 
 " Autoclosing
 Plug 'windwp/nvim-autopairs'

@@ -29,21 +29,9 @@ nnoremap <silent> <C-Down> :resize +2<CR>
 nnoremap <silent> <C-Left> :vertical resize -2<CR>
 nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
-" Prefer visual lines
-nnoremap j gj
-nnoremap k gk
-nnoremap 0 g0
-nnoremap $ g$
-nnoremap ^ g^
-
-vnoremap j gj
-vnoremap k gk
-vnoremap 0 g0
-vnoremap $ g$
-vnoremap ^ g^
-
 " Annoying
 nnoremap Q <Nop>
 
 " Fast editing of init.vim
-nnoremap <Leader>v :edit ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>ve :edit ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>vv :cd ~/.config/nvim<CR>
