@@ -29,7 +29,7 @@ nnoremap <silent>    <Leader>x :BufferDelete!<CR>
 "                          :BufferCloseBuffersRight<CR>
 "
 " Magic buffer-picking mode
-nnoremap <silent> <Leader>b    :BufferPick<CR>
+" nnoremap <silent> <Leader>b    :BufferPick<CR>
 
 " Sort automatically by...
 " nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
@@ -71,7 +71,7 @@ let bufferline.icon_custom_colors = v:false
 " Configure icons on the bufferline.
 let bufferline.icon_separator_active = ' '
 let bufferline.icon_separator_inactive = ' '
-let bufferline.icon_close_tab = ''
+let bufferline.icon_close_tab = 'x'
 let bufferline.icon_close_tab_modified = '+'
 
 " Sets the maximum padding width with which to surround each tab.
