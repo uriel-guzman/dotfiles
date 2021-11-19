@@ -2,9 +2,9 @@
 let mapleader = ' '
 
 " Competitive programming
-nnoremap <Leader>a o<Esc>:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
+nnoremap <Leader>a yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 nnoremap <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
-nnoremap <Leader>i :vsplit %:h/in \| vertical resize 25<CR>
+nnoremap <Leader>i :vsplit %:h/in \| vertical resize 30<CR>
 
 " Better indentation
 vnoremap > >gv
@@ -23,8 +23,8 @@ nnoremap <silent> <C-Down> :resize +2<CR>
 nnoremap <silent> <C-Left> :vertical resize -2<CR>
 nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
+" Fast editing of vim config
+nnoremap <Leader>v :edit ~/.config/nvim/<CR>
+
 " Annoying
 nnoremap Q <Nop>
-
-" Fast editing of init.vim
-nnoremap <Leader>v :edit ~/.config/nvim/init.vim<CR>

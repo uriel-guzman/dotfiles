@@ -1,6 +1,7 @@
 let g:nvim_tree_gitignore = 1 "0 by default
 let g:nvim_tree_indent_markers = 1 "0 by default, this option shows indent markers when folders are open
 let g:nvim_tree_git_hl = 1 "0 by default, will enable file highlight for git attributes (can be used without the icons).
+let g:nvim_tree_quit_on_open = 1
 let g:nvim_tree_respect_buf_cwd = 1
 let g:nvim_tree_special_files = { 'README.md': 1, 'Makefile': 1, 'MAKEFILE': 1 } " List of filenames that gets highlighted with NvimTreeSpecialFile
 let g:nvim_tree_show_icons = {
@@ -14,9 +15,6 @@ nnoremap <Leader>ee :NvimTreeToggle<CR>
 nnoremap <Leader>er :NvimTreeRefresh<CR>
 nnoremap <Leader>ef :NvimTreeFindFile<CR>
 
-" a list of groups can be found at `:help nvim_tree_highlight`
-" highlight NvimTreeFolderIcon guibg=blue
-
 lua << EOF
 
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
@@ -27,14 +25,14 @@ require'nvim-tree'.setup {
   ignore_ft_on_setup  = {},
   auto_close          = true,
   open_on_tab         = false,
-  hijack_cursor       = false,
+  hijack_cursor       = true,
   update_cwd          = true,
   update_to_buf_dir   = {
     enable = true,
     auto_open = true,
   },
   diagnostics = {
-    enable = false,
+    enable = true,
     icons = {
       hint = "",
       info = "",
