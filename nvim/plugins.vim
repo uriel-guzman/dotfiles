@@ -6,7 +6,7 @@ Plug 'sainnhe/gruvbox-material'
 " Extra functionality
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'terrortylor/nvim-comment'
+Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
@@ -31,7 +31,6 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-Plug 'norcalli/nvim-colorizer.lua'
 
 " Formatting
 Plug 'rhysd/vim-clang-format'
@@ -46,7 +45,6 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " Git integration
 Plug 'lewis6991/gitsigns.nvim'
-Plug 'tpope/vim-fugitive'
 
 " Competitive programming
 Plug 'gabrielsimoes/cfparser.vim'
