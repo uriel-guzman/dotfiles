@@ -8,7 +8,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'kyazdani42/nvim-tree.lua'
 Plug 'easymotion/vim-easymotion'
 
 " Syntax highlighting
@@ -29,11 +28,9 @@ Plug 'hrsh7th/vim-vsnip-integ'
 
 " Aesthetics
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
-Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 
 " Formatting
-Plug 'rhysd/vim-clang-format'
+Plug 'sbdchd/neoformat'
 
 " Autoclosing
 Plug 'windwp/nvim-autopairs'
@@ -42,9 +39,6 @@ Plug 'windwp/nvim-autopairs'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-" Git integration
-Plug 'lewis6991/gitsigns.nvim'
 
 " Competitive programming
 Plug 'gabrielsimoes/cfparser.vim'

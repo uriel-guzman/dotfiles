@@ -1,5 +1,6 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <C-c> <cmd>lua require('telescope.builtin').commands()<cr>
+nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <C-b> <cmd>lua require('telescope.builtin').oldfiles()<cr>
 
 lua << EOF

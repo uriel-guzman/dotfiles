@@ -1,4 +1,4 @@
-set nohlsearch                           " Disable search highlighting
+set nohlsearch                           " No highlight search
 set mouse=a                              " Enable mouse
 set number                               " Show line numbers 
 set relativenumber                       " Show relative line numbers 
@@ -22,11 +22,5 @@ set undofile                             " Persistent undoing
 set termguicolors                        " Enable 24-bit RGB colors
 set cursorline                           " Cursor line
 set lazyredraw                           " Prevents flickering when using macros/mappings 
+set path=.,/home/uriel/.config/nvim      " Adding local paths
 
-" Distracting underlines in information messages
-autocmd ColorScheme * highlight ErrorText NONE 
-autocmd ColorScheme * highlight WarningText NONE
-autocmd ColorScheme * highlight HintText NONE
-
-" Disable autocommenting
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o 
