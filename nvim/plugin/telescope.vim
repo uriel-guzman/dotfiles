@@ -1,7 +1,6 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <C-c> <cmd>lua require('telescope.builtin').commands()<cr>
 nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <Leader>f <cmd>lua require('telescope.builtin').oldfiles()<cr>
+nnoremap <C-l> <cmd>lua require('telescope.builtin').oldfiles()<cr>
 
 lua << EOF
 local actions = require('telescope.actions')
@@ -13,16 +12,7 @@ require("telescope").setup {
         -- To disable a keymap, put [map] = false
         -- So, to not map "<C-n>", just put
         -- ["<C-n>"] = false,
-           ["<C-c>"] = false,
 
-        -- doesn't work, wtf
-        -- ["<esc>"] = actions.select_default,
-
-        -- Otherwise, just set the mapping to the function that you want it to be.
-        -- ["<C-i>"] = actions.select_horizontal,
-
-
-           ["<C-c>"] = false,
         -- You can perform as many actions in a row as you like
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },
