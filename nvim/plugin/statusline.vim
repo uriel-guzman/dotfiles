@@ -13,6 +13,7 @@ set statusline+=%{StatuslineGit()}
 set statusline+=\ \ %f
 set statusline+=\ %m
 set statusline+=%=
+set statusline+=%{getcwd()}
 set statusline+=\ \ %y
 set statusline+=\ \ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ \ %{&fileformat}

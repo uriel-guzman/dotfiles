@@ -8,14 +8,12 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'easymotion/vim-easymotion'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'kabouzeid/nvim-lspinstall'
 
 " Autocompletion
 Plug 'hrsh7th/cmp-nvim-lsp'

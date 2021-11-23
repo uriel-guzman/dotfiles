@@ -1,10 +1,14 @@
-" Leader key
+" Leader k ey
 let mapleader = ' '
+
 
 " Competitive programming
 nnoremap <Leader>a yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 nnoremap <silent> <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
 nnoremap <silent> <Leader>i :vsplit %:h/in \| vertical resize 30<CR>
+
+" Close buffer without losing split
+nnoremap <silent> <Leader>x :b#\|bd!#<CR>
 
 " Better indentation
 vnoremap > >gv
