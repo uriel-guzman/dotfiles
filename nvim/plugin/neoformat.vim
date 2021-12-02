@@ -1,4 +1,4 @@
 augroup fmt
   autocmd!
-  autocmd BufWritePre cpp undojoin | Neoformat
+  autocmd BufWritePre *.cpp Neoformat
 augroup END

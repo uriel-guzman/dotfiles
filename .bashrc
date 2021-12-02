@@ -105,7 +105,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-
 #! /bin/bash   
 set -m
 
@@ -136,12 +135,9 @@ fi
 # personal configurations
 export VISUAL=nvim;
 export EDITOR=nvim;
+set -o vi
 
 # my custom aliases
-alias vim='cd ~/.config/nvim'
-alias repo='cd /home/uriel/The\ Empire\ Strikes\ Back/'
-alias icpc='cd /home/uriel/ICPC/'
-alias cucei='cd /home/uriel/CUCEI'
 alias nvim="/usr/bin/neovim"
 
 #########shortcuts.txt#########

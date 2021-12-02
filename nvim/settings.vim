@@ -22,3 +22,4 @@ set undofile                              " Persistent undoing
 set termguicolors                         " Enable 24-bit RGB colors
 set cursorline                            " Cursor line
 set lazyredraw                            " Prevents flickering when using macros/mappings 
+set path=**,~/.config/nvim/**/            " Search directories

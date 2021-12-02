@@ -10,13 +10,11 @@ endfunction
 " Statusline
 set statusline=
 set statusline+=%{StatuslineGit()}
-set statusline+=\ \ %f
-set statusline+=\ %m
+set statusline+=\ \ %{getcwd()}
 set statusline+=%=
-set statusline+=%{getcwd()}
 set statusline+=\ \ %y
 set statusline+=\ \ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ \ %{&fileformat}
-set statusline+=\ \ %l:%c
+set statusline+=\ \ Ln:%l,\ Col:%c
 set statusline+=\ \ 
 
