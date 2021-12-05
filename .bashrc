@@ -151,6 +151,10 @@ cfc() {
   cd ~/ICPC/ && mkdir $1 && cd $1 && nvim a.cpp
 }
 
+gpacp() {
+  git pull origin master && git add . && git commit -a -m $1 && git push origin master
+}
+
 compilation() {
 	alias flags='-Wall -Wextra -Wshadow -fmax-errors=3 -w'
 	g++-10 --std=c++17 $2 ${flags} $1.cpp -o $1.out 

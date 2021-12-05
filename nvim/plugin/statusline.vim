@@ -17,4 +17,3 @@ set statusline+=\ \ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ \ %{&fileformat}
 set statusline+=\ \ Ln:%l,\ Col:%c
 set statusline+=\ \ 
-
