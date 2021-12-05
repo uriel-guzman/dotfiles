@@ -14,8 +14,6 @@ set scrolloff=8                           " Scroll window when reaching end of f
 set ignorecase                            " Ignore case when searching a pattern 
 set smartcase                             " If the first letter of a pattern is uppercase, overwrite ignorecase
 set autowrite                             " Save file if modified 
-set splitbelow                            " Open horizontal split below 
-set splitright                            " Open vertical split to the right 
 set linebreak                             " Allow lines to wrap 
 set breakindent                           " Visually indent wrapped lines
 set undofile                              " Persistent undoing

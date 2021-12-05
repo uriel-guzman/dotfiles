@@ -10,7 +10,7 @@ nnoremap <F7> :w \| term random %:r<CR>
 " Helpers
 nnoremap <Leader>a yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 nnoremap <silent> <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
-nnoremap <silent> <Leader>i :vsplit %:h/in \| vertical resize 30<CR>
+nnoremap <silent> <Leader>i :botright vsplit %:h/in \| vertical resize 30<CR>
 
 " Add template on new file 
 if !filereadable(expand('%'))

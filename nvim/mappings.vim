@@ -15,6 +15,3 @@ nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
 " Easy file searching
 nnoremap <Leader>f :find \c
-
-" Select all
-nnoremap <C-a> ggVG

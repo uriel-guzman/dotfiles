@@ -148,7 +148,7 @@ cyan='\x1B[0;36m'
 noColor='\x1B[0m'
 
 cfc() {
-  icpc && mkdir $1 && cd $1 && nvim a.cpp
+  cd ~/ICPC/ && mkdir $1 && cd $1 && nvim a.cpp
 }
 
 compilation() {
