@@ -6,6 +6,8 @@ alias nvim="/usr/bin/neovim"  # Neovim path
 export VISUAL=nvim;
 export EDITOR=nvim;
 
+bind -x '"\C-f":nvim $(fzf)'
+
 # Colors
 green='\[\033[01;32m\]'
 blue='\[\033[01;34m\]'

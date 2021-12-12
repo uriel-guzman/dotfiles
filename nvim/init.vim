@@ -1,3 +1,6 @@
+" Leader key
+let mapleader = ' '
+
 call plug#begin('~/.vim/vim-plug')
 
 " Themes 

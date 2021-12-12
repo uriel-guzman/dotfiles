@@ -9,16 +9,8 @@ require("telescope").setup {
   defaults = {
     mappings = {
       i = {
-        -- To disable a keymap, put [map] = false
-        -- So, to not map "<C-n>", just put
-        -- ["<C-n>"] = false,
-
-        -- You can perform as many actions in a row as you like
-        -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },
       n = {
-        -- ["<esc>"] = actions.close,
-        -- ["<C-i>"] = my_cool_custom_action,
       },
     },
   }, extensions = {
