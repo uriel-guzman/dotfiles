@@ -6,14 +6,7 @@ lua << EOF
 local actions = require('telescope.actions')
 
 require("telescope").setup {
-  defaults = {
-    mappings = {
-      i = {
-      },
-      n = {
-      },
-    },
-  }, extensions = {
+  extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
       override_generic_sorter = false, -- override the generic sorter

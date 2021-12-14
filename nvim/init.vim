@@ -1,6 +1,3 @@
-" Leader key
-let mapleader = ' '
-
 call plug#begin('~/.vim/vim-plug')
 
 " Themes 
@@ -44,3 +41,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'gabrielsimoes/cfparser.vim'
 
 call plug#end()
+
+" Theme
+colorscheme gruvbox-material
+
+" Leader key
+let mapleader = ' '
