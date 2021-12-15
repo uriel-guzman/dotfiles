@@ -42,8 +42,5 @@ Plug 'gabrielsimoes/cfparser.vim'
 
 call plug#end()
 
-" Theme
-colorscheme gruvbox-material
-
 " Leader key
 let mapleader = ' '

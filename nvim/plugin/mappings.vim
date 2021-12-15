@@ -16,3 +16,9 @@ nnoremap <Leader>s ggVG
 
 " Yank deleted text into empty register
 vnoremap p "_dP
+
+" Close buffer without losing split
+nnoremap <silent> <Leader>x :b#\|bd!#<CR>
+
+" Easy vimrc editing
+nnoremap <Leader>v :e ~/.config/nvim/**/

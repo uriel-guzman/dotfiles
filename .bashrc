@@ -9,13 +9,13 @@ export EDITOR=nvim;
 bind -x '"\C-f":nvim $(fzf)'
 
 # Colors
-green='\[\033[01;32m\]'
-blue='\[\033[01;34m\]'
-magenta='\[\033[01;35m\]'
-white='\[\033[01;00m\]'
-cyan='\[\033[01;36m\]'
-yellow='\[\033[01;33m\]'
-red='\[\033[01;31m\]'
+export green='\e[32m'
+export blue='\e[34m'
+export magenta='\e[35m'
+export white='\e[00m'
+export cyan='\e[36m'
+export yellow='\e[33m'
+export red='\e[31m'
 
 gitBranch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
@@ -112,6 +112,10 @@ random() {
 			printf "${green} Accepted ${white}\n"
 		else
 			printf "${red} Wrong answer ${white}\n"
+      printf "\n${red}"
+      cat <(./$1.out < in)
+      printf "${white}"
+      cat <(./brute.out < in)
 			break
 		fi
 	done

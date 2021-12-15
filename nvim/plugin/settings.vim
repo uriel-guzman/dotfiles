@@ -2,7 +2,6 @@ set nohlsearch                     " No highlight search
 set mouse=a                        " Enable mouse
 set number                         " Show line numbers 
 set relativenumber                 " Show relative line numbers 
-set title                          " Show file title in window
 set noshowcmd                      " Don't show recent commands
 set noequalalways                  " Don't resize windows when splitting or closing a window
 set clipboard=unnamedplus          " Copy and paste from system clipboard 
@@ -21,7 +20,9 @@ set undofile                       " Persistent undoing
 set termguicolors                  " Enable 24-bit RGB colors
 set cursorline                     " Cursor line
 set lazyredraw                     " Avoid refreshing screen with macros
-set path=**,~/.config/nvim/**/     " Search directories
+set path=**                        " Search directories
+set wildignore+=**/node_modules/*  " Ignore these files from search
 set nomagic                        " Literally matches characters like '/' or '[' on search patterns
 set splitbelow                     " Force all horizontal splits to go below current window
 set splitright                     " Force all vertical splits to go to the right of current window
+" let g:html_indent_inctags = "html,body,head,tbody"
