@@ -1,6 +1,6 @@
 " Open on current file
-nnoremap <Leader>e :Explore<CR>
+nnoremap <Leader>e :Lexplore<CR>
 
-" Search for a file and open it on Netrw (faster than find)
-nnoremap <Leader>d :Explore **/
-
+let g:netrw_winsize=20
+let g:netrw_banner=0
+let g:netrw_liststyle=3

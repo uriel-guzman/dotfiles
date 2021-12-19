@@ -11,14 +11,18 @@ nnoremap <silent> <C-Right> :vertical resize +2<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-" Select whole file
-nnoremap <Leader>s ggVG
-
-" Yank deleted text into empty register
+" Always yank deleted text into empty register in visual mode
 vnoremap p "_dP
-
-" Close buffer without losing split
-nnoremap <silent> <Leader>x :b#\|bd!#<CR>
 
 " Easy vimrc editing
 nnoremap <Leader>v :e ~/.config/nvim/**/
+
+" Competitive programming helpers
+nnoremap <Leader>a yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
+nnoremap <silent> <Leader>t :%d<CR>:0r ~/ICPC/tem.cpp<CR> /const<CR>:nohlsearch<CR>
+
+" Copy whole file contents
+nnoremap <Leader>y :%y+<CR>
+
+" Overrite whole file with clipboard paste
+nnoremap <Leader>p :%d_<CR>p<CR>

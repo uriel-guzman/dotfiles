@@ -16,7 +16,7 @@ font:
     family: Hack Nerd Font
     style: Italic
 
-  size: 14.0
+  size: 12.0
 
   offset:
     x: 0
@@ -32,8 +32,8 @@ window:
     y: 0
 
   dimensions:
-    columns: 125
-    lines: 35
+    columns: 150
+    lines: 50
 
   decorations: full
   # Allow terminal applications to change Alacritty's window title.

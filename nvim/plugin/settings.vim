@@ -15,14 +15,10 @@ set ignorecase                     " Ignore case when searching a pattern
 set smartcase                      " If the first letter of a pattern is uppercase, overwrite ignorecase
 set autowrite                      " Save file if modified 
 set nowrap                         " Do not allow lines to wrap 
-set breakindent                    " Visually indent wrapped lines
 set undofile                       " Persistent undoing
 set termguicolors                  " Enable 24-bit RGB colors
 set cursorline                     " Cursor line
 set lazyredraw                     " Avoid refreshing screen with macros
-set path=**                        " Search directories
-set wildignore+=**/node_modules/*  " Ignore these files from search
 set nomagic                        " Literally matches characters like '/' or '[' on search patterns
 set splitbelow                     " Force all horizontal splits to go below current window
 set splitright                     " Force all vertical splits to go to the right of current window
-" let g:html_indent_inctags = "html,body,head,tbody"
