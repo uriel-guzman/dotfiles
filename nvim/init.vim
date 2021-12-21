@@ -7,6 +7,10 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'christoomey/vim-tmux-navigator'
+
+" File explorer
+Plug 'preservim/nerdtree'
 
 " Syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
