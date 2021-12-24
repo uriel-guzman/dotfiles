@@ -4,7 +4,7 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   },
   indent = {
-    enable = false, -- unstable indenting
+    enable = false, -- for = operator
   },
   incremental_selection = {
     enable = false, -- don't really use this at all

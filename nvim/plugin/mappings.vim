@@ -7,10 +7,6 @@ nnoremap <silent> <C-Down> :resize +2<CR>
 nnoremap <silent> <C-Left> :vertical resize -2<CR>
 nnoremap <silent> <C-Right> :vertical resize +2<CR>
 
-" Move lines of text
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-
 " Always yank deleted text into empty register in visual mode
 vnoremap p "_dP
 
@@ -29,3 +25,6 @@ nnoremap <Leader>y :%y+<CR>
 
 " Overrite whole file with clipboard paste
 nnoremap <Leader>p :%d_<CR>P<CR>
+
+" Delete whole file contents
+nnoremap <Leader>d :%d_<CR>
