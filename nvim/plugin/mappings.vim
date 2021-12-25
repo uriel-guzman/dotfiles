@@ -13,18 +13,10 @@ vnoremap p "_dP
 " Close buffer without losing split
 nnoremap <silent> <Leader>x :b#\|bd!#<CR>
 
-" Easy vimrc editing
-nnoremap <Leader>v :e ~/.config/nvim/**/
+" Visually select whole file
+nnoremap <Leader>a ggVG
 
-" Competitive programming helpers
-nnoremap <Leader>a yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
-nnoremap <silent> <Leader>i :botright vsplit %:h/in \| vertical resize 30<CR>
+" Read algorithms into cursor position
+nnoremap <Leader>r yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
 
-" Copy whole file contents
-nnoremap <Leader>y :%y+<CR>
 
-" Overrite whole file with clipboard paste
-nnoremap <Leader>p :%d_<CR>P<CR>
-
-" Delete whole file contents
-nnoremap <Leader>d :%d_<CR>

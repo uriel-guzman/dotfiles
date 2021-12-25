@@ -1,5 +1,4 @@
 set nohlsearch                     " No highlight search
-set mouse=a                        " Enable mouse
 set number                         " Show line numbers 
 set relativenumber                 " Show relative line numbers 
 set noshowcmd                      " Don't show recent commands
@@ -21,5 +20,3 @@ set lazyredraw                     " Avoid refreshing screen with macros
 set nomagic                        " Literally matches characters like '/' or '[' on search patterns
 set splitbelow                     " Force all horizontal splits to go below current window
 set splitright                     " Force all vertical splits to go to the right of current window
-set title
-set titlestring=%{getcwd()}
