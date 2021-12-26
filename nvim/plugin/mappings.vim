@@ -16,8 +16,8 @@ nnoremap <silent> <Leader>x :b#\|bd!#<CR>
 " Visually select whole file
 nnoremap <Leader>a ggVG
 
-" Read algorithms into cursor position
-nnoremap <Leader>r yyp:-1r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
- 
 " Poor man's fuzzy finder
 nnoremap <Leader>f :e ~/dotfiles/**/
+
+" Fuck nvim-cmp and its 2000 dependencies
+inoremap <Tab> <C-x><C-o>
