@@ -22,10 +22,15 @@ require("telescope").setup {
         "/home/uriel/dotfiles/",
         "-type",
         "f,d",
+        "-not",
+        "-path",
+        "*/node_modules/*",
+        "-not",
+        "-path",
+        "*/.git/*",
         }
       }
     }
   }
-
 require('telescope').load_extension('fzf') -- load fzf extension
 EOF
