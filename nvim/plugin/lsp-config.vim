@@ -17,6 +17,5 @@ require'lspconfig'.html.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.pylsp.setup{}
 require'lspconfig'.tsserver.setup{}
-require'lspconfig'.sumneko_lua.setup{}
 local nvim_lsp = require('lspconfig')
 EOF

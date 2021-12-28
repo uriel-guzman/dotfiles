@@ -13,11 +13,8 @@ vnoremap p "_dP
 " Close buffer without losing split
 nnoremap <silent> <Leader>x :b#\|bd!#<CR>
 
-" Visually select whole file
+" Select all the text
 nnoremap <Leader>a ggVG
 
-" Poor man's fuzzy finder
-nnoremap <Leader>f :e ~/dotfiles/**/
-
-" Fuck nvim-cmp and its 2000 dependencies
-inoremap <Tab> <C-x><C-o>
+" Competitive programming helper
+nnoremap <silent> <Leader>i :vsplit %:h/in \| vertical resize 30<CR>

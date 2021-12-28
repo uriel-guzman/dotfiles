@@ -16,10 +16,10 @@ require("telescope").setup {
     },
   pickers = {
     find_files = {
-      find_command = {
+      find_command = { -- Find files and directories except for paths in .git and node_modules
         "find",
-        ".",
-        "/home/uriel/dotfiles/",
+        ".", -- Current working directory
+        "/home/uriel/dotfiles/", -- :>)
         "-type",
         "f,d",
         "-not",
