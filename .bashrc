@@ -1,5 +1,8 @@
-shopt -s globstar             # Enable "**" recursive file searching
-alias nvim="/usr/bin/neovim"  # Neovim path
+# Enable "**" recursive file searching
+shopt -s globstar             
+
+# Neovim executable path
+alias nvim="/usr/bin/neovim"  
 
 # Default to Neovim editing
 export VISUAL=nvim;
@@ -25,16 +28,6 @@ gitBranch() {
 # Fancy prompt
 PS1="${debian_chroot:+($debian_chroot)}${green}\u${white}: ${blue}\w${magenta} \$(gitBranch)${white} \n  ${white}↳${white} "
 
-myPull() {
-  git pull origin master
-}
-
-myPush() {
-  git add . 
-  git commit -a -m "$1" 
-  git push origin master
-}
-
 ### Competitive programming
 
 createContest() {
@@ -46,45 +39,7 @@ compile() {
   g++-10 --std=c++17 $2 ${flags} $1.cpp -o $1.out 
 }
 
-export -f compile
-
-debug() {
-  file=$1
-  input=$1
-
-  if [ $# -ge 2 ]; then
-    input=$2
-  fi
-
-  compile ${file} -DLOCAL 
-
-
-  ./${file}.out < ${input}
-  rm -r ./${file}.out
-} 
-
-export -f debug
-
-run() {
-  file=$1
-  input=$1
-
-  if [ $# -ge 2 ]; then
-    input=$2
-  fi
-
-  compile ${file} ""
-
-
-  ./${file}.out < ${input}
-  rm -r ./${file}.out
-}
-
-export -f run
-
 random() {
-  # random file
-
   compile $1 "" 
   compile brute ""
 

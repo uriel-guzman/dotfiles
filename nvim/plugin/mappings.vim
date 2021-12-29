@@ -18,3 +18,4 @@ nnoremap <Leader>a ggVG
 
 " Competitive programming helper
 nnoremap <silent> <Leader>i :vsplit %:h/in \| vertical resize 30<CR>
+

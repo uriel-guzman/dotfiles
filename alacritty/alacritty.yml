@@ -52,6 +52,7 @@ selection:
 live_config_reload: true
 draw_bold_text_with_bright_colors: true
 
+### Gruvbox theme
 colors:
   # COLORSCHEME: base16-gruvbox-dark-medium-256.yml
   # Default colors
