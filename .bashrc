@@ -39,6 +39,8 @@ compile() {
   g++-10 --std=c++17 $2 ${flags} $1.cpp -o $1.out 
 }
 
+export -f compile
+
 random() {
   compile $1 "" 
   compile brute ""
