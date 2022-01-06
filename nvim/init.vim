@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/vim-plug')
+call plug#begin('$HOME/.local/share/nvim/vim-plug/')
 
 " Themes 
 Plug 'sainnhe/gruvbox-material'
@@ -33,15 +33,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-" Competitive programming
-Plug 'gabrielsimoes/cfparser.vim'
-
 call plug#end()
-
-""" Random shit (don't know where to put it)
-
-" Leader key
-let mapleader = ' '
 
 " Highlight text on yank
 autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 100})

@@ -1,21 +1,20 @@
+" Leader key
+let mapleader = ' '
+
 " Terminal escape key
 tnoremap <C-[> <C-\><C-n>
 
-" Resizing windows
-nnoremap <silent> <C-Up> :resize -2<CR>
-nnoremap <silent> <C-Down> :resize +2<CR>
-nnoremap <silent> <C-Left> :vertical resize -2<CR>
-nnoremap <silent> <C-Right> :vertical resize +2<CR>
+" Delete buffer without losing split
+nnoremap <silent> <Leader>x :b# <Bar> bd!#<CR>
 
-" Always yank deleted text into empty register in visual mode
-vnoremap p "_dP
+" Yank all the text
+nnoremap <Leader>y :%y+<CR>
 
-" Close buffer without losing split
-nnoremap <silent> <Leader>x :b#\|bd!#<CR>
+" Paste all the text
+nnoremap <Leader>p :%d_<CR>P<CR>
 
-" Select all the text
-nnoremap <Leader>a ggVG
+" Delete all the text
+nnoremap <Leader>d :%d_<CR>
 
 " Competitive programming helper
-nnoremap <silent> <Leader>i :vsplit %:h/in \| vertical resize 30<CR>
-
+nnoremap <silent> <Leader>i :vsplit in <Bar> vertical resize 30<CR>
