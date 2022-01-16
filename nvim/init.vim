@@ -9,7 +9,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 
 " Syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -36,7 +36,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 call plug#end()
 
 " Highlight text on yank
-autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 100})
+autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout = 100 })
 
 " Disable automatic comment insertions
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

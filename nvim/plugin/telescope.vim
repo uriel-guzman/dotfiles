@@ -1,10 +1,7 @@
-nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <C-f> <cmd>lua require('telescope.builtin').oldfiles()<cr>
+nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
+nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<CR>
 
 lua << EOF
-local actions = require('telescope.actions')
-
 require("telescope").setup {
   extensions = {
     fzf = {
@@ -32,5 +29,6 @@ require("telescope").setup {
       }
     }
   }
+
 require('telescope').load_extension('fzf') -- load fzf extension
 EOF
