@@ -15,7 +15,6 @@ set autowrite                      " Save file if modified
 set nowrap                         " Do not allow lines to wrap 
 set undofile                       " Persistent undoing
 set termguicolors                  " Enable 24-bit RGB colors
-set cursorline                     " Cursor line
 set nomagic                        " Literally matches characters like '/' or '[' on search patterns
 set splitbelow                     " Force all horizontal splits to go below current window
 set splitright                     " Force all vertical splits to go to the right of current window
