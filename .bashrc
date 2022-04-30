@@ -2,7 +2,7 @@
 shopt -s globstar             
 
 # Neovim executable path
-alias nvim="/usr/bin/neovim"  
+alias nvim="~/Downloads/nvim-linux64/bin/nvim"  
 
 # Default to Neovim editing
 export VISUAL=nvim;
@@ -29,11 +29,6 @@ gitBranch() {
 PS1="${debian_chroot:+($debian_chroot)}${green}\u${white}: ${blue}\w${magenta} \$(gitBranch)${white} \n  ${white}↳${white} "
 
 ### Competitive programming
-
-createContest() {
-  cd ~/ICPC/ && mkdir $1 && cd $1 && nvim a.cpp
-}
-
 compile() {
   alias flags='-Wall -Wextra -Wshadow -fmax-errors=3 -w'
   g++-10 --std=c++17 $2 ${flags} $1.cpp -o $1.out 
@@ -80,3 +75,19 @@ done
 }
 
 export -f random
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/uriel/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/uriel/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/uriel/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/uriel/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

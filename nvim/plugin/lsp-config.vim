@@ -17,5 +17,6 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.html.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.intelephense.setup{}
 local nvim_lsp = require('lspconfig')
 EOF

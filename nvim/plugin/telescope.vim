@@ -1,5 +1,6 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
 nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<CR>
+nnoremap <C-t> <cmd>lua require('telescope.builtin').tags()<CR>
 
 lua << EOF
 require("telescope").setup {

@@ -1,2 +1,2 @@
 " Compiling
-nnoremap <F5> :term python3 % < in<CR>
+nnoremap <F5> :w <Bar> :term python3 % < in<CR>

@@ -2,6 +2,7 @@ call plug#begin('$HOME/.local/share/nvim/vim-plug/')
 
 " Themes 
 Plug 'sainnhe/gruvbox-material'
+Plug 'ful1e5/onedark.nvim'
 
 " Extra functionality
 Plug 'tpope/vim-surround'
@@ -47,4 +48,4 @@ autocmd ColorScheme * highlight WarningText NONE
 autocmd ColorScheme * highlight HintText NONE
 
 " Colorscheme
-colorscheme gruvbox-material
+colorscheme onedark

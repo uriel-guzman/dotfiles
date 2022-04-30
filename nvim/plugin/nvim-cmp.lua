@@ -28,3 +28,6 @@ require('lspconfig')['clangd'].setup {
 require('lspconfig')['pyright'].setup {
   capabilities = capabilities
 }
+require('lspconfig')['intelephense'].setup {
+  capabilities = capabilities
+}
