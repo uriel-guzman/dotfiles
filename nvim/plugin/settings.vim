@@ -1,3 +1,4 @@
+set mouse=a                        " Activate mouse
 set nohlsearch                     " No highlight search
 set number                         " Show line numbers 
 set relativenumber                 " Show relative line numbers 

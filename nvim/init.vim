@@ -42,10 +42,5 @@ autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout = 10
 " Disable automatic comment insertions
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Distracting underlines in information messages
-autocmd ColorScheme * highlight ErrorText NONE 
-autocmd ColorScheme * highlight WarningText NONE
-autocmd ColorScheme * highlight HintText NONE
-
 " Colorscheme
 colorscheme onedark
