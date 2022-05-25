@@ -54,7 +54,7 @@ random() {
     fi
   }
 
-for ((i = 1; i <= 500; i++)); do
+for ((i = 1; i <= 1000; i++)); do
   generateTestCase
 
   printf "Test case #${i}"

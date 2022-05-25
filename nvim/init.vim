@@ -2,15 +2,11 @@ call plug#begin('$HOME/.local/share/nvim/vim-plug/')
 
 " Themes 
 Plug 'sainnhe/gruvbox-material'
-Plug 'ful1e5/onedark.nvim'
 
 " Extra functionality
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-
-" Syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -43,4 +39,4 @@ autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout = 10
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Colorscheme
-colorscheme onedark
+colorscheme gruvbox-material
