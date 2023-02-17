@@ -31,3 +31,9 @@ require('lspconfig')['pyright'].setup {
 require('lspconfig')['intelephense'].setup {
   capabilities = capabilities
 }
+require('lspconfig')['jdtls'].setup {
+  capabilities = capabilities
+}
+require('lspconfig')['html'].setup {
+  capabilities = capabilities
+}

@@ -21,12 +21,8 @@ export cyan='\e[36m'
 export yellow='\e[33m'
 export red='\e[31m'
 
-gitBranch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
-}
-
 # Fancy prompt
-PS1="${debian_chroot:+($debian_chroot)}${green}\u${white}: ${blue}\w${magenta} \$(gitBranch)${white} \n  ${white}↳${white} "
+PS1="${debian_chroot:+($debian_chroot)}${green}\u${white}: ${blue}\w${magenta} ${white}"
 
 ### Competitive programming
 compile() {
@@ -54,12 +50,26 @@ random() {
     fi
   }
 
-for ((i = 1; i <= 1000; i++)); do
+for ((i = 1; i <= 300; i++)); do
   generateTestCase
 
   printf "Test case #${i}"
 
+  start=`date +%s.%N`
   diff -uwi <(./$1.out < in) <(./brute.out < in) > diff$1
+  end=`date +%s.%N`
+  runtime=$( echo "($end - $start) * 1000" | bc -l )
+  runtime=$( echo ${runtime%%.*} )
+  printf "${blue} ${runtime} ms ${white}\n"
+
+  if ((${runtime} > 2000)); then
+    printf "${red} Time limit exceeded ${white}\n"
+    printf "\n${red}"
+    cat <(./$1.out < in)
+    printf "${white}"
+    cat <(./brute.out < in)
+    break
+  fi
 
   if [[ $? -eq 0 ]]; then
     printf "${green} Accepted ${white}\n"

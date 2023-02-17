@@ -1,1 +1,1 @@
-autocmd BufWritePre *.cpp,*.js,*.jsx,*.css,*.json,*.html,*.py,*.php Neoformat
+autocmd BufWritePre *.cpp,*.js,*.jsx,*.css,*.json,*.html,*.py,*.php,*.java Neoformat

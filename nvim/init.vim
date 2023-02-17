@@ -8,6 +8,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 
+" Syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter'
+
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'

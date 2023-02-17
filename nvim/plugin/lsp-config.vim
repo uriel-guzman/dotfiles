@@ -18,5 +18,7 @@ require'lspconfig'.html.setup{}
 require'lspconfig'.jsonls.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.intelephense.setup{}
+require'lspconfig'.jdtls.setup{}
+require'lspconfig'.html.setup{}
 local nvim_lsp = require('lspconfig')
 EOF
