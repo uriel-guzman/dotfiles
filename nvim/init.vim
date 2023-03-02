@@ -1,39 +1,39 @@
-call plug#begin('$HOME/.local/share/nvim/vim-plug/')
+ call plug#begin('$HOME/.local/share/nvim/vim-plug/')
 
-" Themes 
-Plug 'sainnhe/gruvbox-material'
+ " Themes 
+ Plug 'sainnhe/gruvbox-material'
 
-" Extra functionality
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
+ " Extra functionality
+ Plug 'tpope/vim-surround'
+ Plug 'tpope/vim-repeat'
+ Plug 'tpope/vim-commentary'
 
-" Syntax highlighting
-Plug 'nvim-treesitter/nvim-treesitter'
+ " Syntax highlighting
+ Plug 'nvim-treesitter/nvim-treesitter'
 
-" LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+ " LSP
+ Plug 'neovim/nvim-lspconfig'
+ Plug 'williamboman/nvim-lsp-installer'
 
-" Autocompletion
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
+ " Autocompletion
+ Plug 'hrsh7th/cmp-nvim-lsp'
+ Plug 'hrsh7th/nvim-cmp'
+ Plug 'hrsh7th/vim-vsnip'
+ Plug 'hrsh7th/vim-vsnip-integ'
 
-" Formatting
-Plug 'sbdchd/neoformat'
+ " Formatting
+ Plug 'sbdchd/neoformat'
 
-" Autoclosing pairs
-Plug 'windwp/nvim-autopairs'
+ " Autoclosing pairs
+ Plug 'windwp/nvim-autopairs'
 
-" Telescope
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+ " Telescope
+ Plug 'kyazdani42/nvim-web-devicons'
+ Plug 'nvim-lua/plenary.nvim'
+ Plug 'nvim-telescope/telescope.nvim'
+ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-call plug#end()
+ call plug#end()
 
 " Highlight text on yank
 autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout = 100 })

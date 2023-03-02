@@ -1,9 +1,6 @@
 # Enable "**" recursive file searching
 shopt -s globstar             
 
-# Neovim executable path
-alias nvim="~/Downloads/nvim-linux64/bin/nvim"  
-
 # Default to Neovim editing
 export VISUAL=nvim;
 export EDITOR=nvim;
@@ -55,21 +52,21 @@ for ((i = 1; i <= 300; i++)); do
 
   printf "Test case #${i}"
 
-  start=`date +%s.%N`
+  # start=`date +%s.%N`
   diff -uwi <(./$1.out < in) <(./brute.out < in) > diff$1
-  end=`date +%s.%N`
-  runtime=$( echo "($end - $start) * 1000" | bc -l )
-  runtime=$( echo ${runtime%%.*} )
-  printf "${blue} ${runtime} ms ${white}\n"
+  # end=`date +%s.%N`
+  # runtime=$( echo "($end - $start) * 1000" | bc -l )
+  # runtime=$( echo ${runtime%%.*} )
+  # printf "${blue} ${runtime} ms ${white}\n"
 
-  if ((${runtime} > 2000)); then
-    printf "${red} Time limit exceeded ${white}\n"
-    printf "\n${red}"
-    cat <(./$1.out < in)
-    printf "${white}"
-    cat <(./brute.out < in)
-    break
-  fi
+  # if ((${runtime} > 2000)); then
+  #   printf "${red} Time limit exceeded ${white}\n"
+  #   printf "\n${red}"
+  #   cat <(./$1.out < in)
+  #   printf "${white}"
+  #   cat <(./brute.out < in)
+  #   break
+  # fi
 
   if [[ $? -eq 0 ]]; then
     printf "${green} Accepted ${white}\n"

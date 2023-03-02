@@ -8,5 +8,5 @@ nnoremap <F7> :w <Bar> :term random %:r<CR>
 
 " Helpers
 nnoremap <silent> <Leader>t :%d_<Bar>:-1r ~/ICPC/tem.cpp<CR>
-nnoremap <Leader>r O<Esc>:r ~/The\ Empire\ Strikes\ Back/ICPC/Codes/**/\c
+nnoremap <Leader>r O<Esc>:r ~/Algorithms/**/\c
 nnoremap <Leader>i :vsplit in <Bar> vertical resize 40<CR>
