@@ -1,25 +1,6 @@
-# Enable "**" recursive file searching
-shopt -s globstar             
-
 # Default to Neovim editing
 export VISUAL=nvim;
 export EDITOR=nvim;
-
-# FZF (not default)
-source /usr/share/doc/fzf/examples/key-bindings.bash
-source /usr/share/doc/fzf/examples/completion.bash
-
-# Colors
-export green='\e[32m'
-export blue='\e[34m'
-export magenta='\e[35m'
-export white='\e[00m'
-export cyan='\e[36m'
-export yellow='\e[33m'
-export red='\e[31m'
-
-# Fancy prompt
-PS1="${debian_chroot:+($debian_chroot)}${green}\u${white}: ${blue}\w${magenta} ${white}"
 
 ### Competitive programming
 compile() {
@@ -82,19 +63,3 @@ done
 }
 
 export -f random
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/uriel/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/uriel/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/uriel/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/uriel/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-

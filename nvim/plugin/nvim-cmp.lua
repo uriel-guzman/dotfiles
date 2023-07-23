@@ -22,6 +22,12 @@ cmp.setup({
 
 -- Setup lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+require('lspconfig')['jsonls'].setup {
+  capabilities = capabilities
+}
+require('lspconfig')['tsserver'].setup {
+  capabilities = capabilities
+}
 require('lspconfig')['clangd'].setup {
   capabilities = capabilities
 }
