@@ -45,5 +45,5 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Colorscheme
 colorscheme gruvbox-material
 
-" Map unknown filetypes to known filetypes
+" Map unknown filetypes to known filetypes for highlighting
 autocmd BufRead,BufNewFile *.c3typ set filetype=java

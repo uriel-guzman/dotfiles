@@ -22,11 +22,31 @@ brew install ripgrep
 # Create symlinks
 # ------------------------------------------------------------------------------
 
-## MacOS & Linux
+# MacOS & Linux
 rm ~/.config/nvim
 rm ~/.tmux.conf
 rm ~/.bashrc
 
 ln -s "$(pwd)/nvim" ~/.config/nvim
-ln -s "$(pwd)/tmux.conf"  ~/.tmux.conf
+ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 ln -s "$(pwd)/.bashrc" ~/.bashrc
+
+# ------------------------------------------------------------------------------
+# Tiling window manager (MacOS)
+# ------------------------------------------------------------------------------
+
+brew install koekeishiya/formulae/yabai
+brew install jq
+brew install koekeishiya/formulae/skhd
+
+rm ~/.yabairc
+rm ~/.skhdrc
+
+ln -s "$(pwd)/.yabairc" ~/.yabairc
+ln -s "$(pwd)/.skhdrc" ~/.skhdrc
+
+chmod +x ~/.yabairc
+chmod +x ~/.skhdrc
+
+yabai --start-service
+skhd --start-service
