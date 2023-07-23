@@ -14,3 +14,14 @@ ctrl + shift - 0 : yabai -m window --space 10
 alt - b : yabai -m space --layout bsp
 alt - f : yabai -m space --layout float
 alt - s : yabai -m space --layout stack
+
+# Application Shortcuts
+ctrl + fn - f : open ~
+ctrl + fn - t : open -na /Applications/Alacritty.app
+ctrl + fn - s : open "x-apple.systempreferences:"
+ctrl + fn - a : open -a "About This Mac"
+ctrl + fn - c : open -na /Applications/Google\ Chrome.app
+ctrl + fn - v : open -na /Applications/Visual\ Studio\ Code.app
+ctrl + fn - l : open -na /Applications/Slack.app
+ctrl + fn - m : open -na /Applications/Spotify.app
+ctrl + fn - g : open -na /Applications/Signal.app
