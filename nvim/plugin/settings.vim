@@ -17,3 +17,5 @@ set nomagic                  " Literally matches characters like '/' or '[' on s
 set splitbelow               " Make all horizontal splits to go below current window
 set splitright               " Make all vertical splits to go to the right of current window
 set laststatus=3             " Global statusline
+set path=~/.config/nvim/**/
+
