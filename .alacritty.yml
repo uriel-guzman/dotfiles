@@ -94,3 +94,8 @@ colors:
     - {index: 19, color: '0x504945'}
     - {index: 20, color: '0xbdae93'}
     - {index: 21, color: '0xebdbb2'}
+
+key_bindings:
+  - { key: Key6,        mods: Control, chars: "\x1e"                     }
+
+

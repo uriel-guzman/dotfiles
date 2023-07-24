@@ -37,6 +37,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Fast file switching
 Plug 'ThePrimeagen/harpoon'
 
+" Git intergration
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Highlight text on yank
