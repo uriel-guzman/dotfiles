@@ -23,7 +23,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
 " Formatting
-Plug 'sbdchd/neoformat'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 " Autoclosing pairs
 Plug 'windwp/nvim-autopairs'
