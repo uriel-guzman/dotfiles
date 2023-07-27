@@ -1,6 +1,7 @@
 # ------------------------------------------------------------------------------
 # Alacritty
 # ------------------------------------------------------------------------------
+
 # MacOS TODO: Add Linux instructions
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
@@ -13,6 +14,7 @@ ln -s "$(pwd)/.alacritty.yml" ~/.alacritty.yml
 # ------------------------------------------------------------------------------
 # Neovim
 # ------------------------------------------------------------------------------
+
 # MacOS TODO: Add Linux instructions
 brew install neovim
 brew install fzf
@@ -27,32 +29,16 @@ ln -s "$(pwd)/nvim" ~/.config/nvim
 # ------------------------------------------------------------------------------
 # Tmux
 # ------------------------------------------------------------------------------
+
 # MacOS & Linux
+brew install tmux
 rm ~/.tmux.conf
 ln -s "$(pwd)/.tmux.conf" ~/.tmux.conf
 
 # ------------------------------------------------------------------------------
 # Bashrc
 # ------------------------------------------------------------------------------
+
 # MacOS & Linux
 rm ~/.bashrc
 ln -s "$(pwd)/.bashrc" ~/.bashrc
-
-# ------------------------------------------------------------------------------
-# Yabai (MacOS)
-# ------------------------------------------------------------------------------
-brew install koekeishiya/formulae/yabai
-brew install jq
-brew install koekeishiya/formulae/skhd
-
-rm ~/.yabairc
-rm ~/.skhdrc
-
-ln -s "$(pwd)/.yabairc" ~/.yabairc
-ln -s "$(pwd)/.skhdrc" ~/.skhdrc
-
-chmod +x ~/.yabairc
-chmod +x ~/.skhdrc
-
-yabai --start-service
-skhd --start-service
