@@ -1,9 +1,15 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
 nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<CR>
-nnoremap <C-t> <cmd>lua require('telescope.builtin').tags()<CR>
 
 lua << EOF
+local telescopeConfig = require("telescope.config")
+local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+table.insert(vimgrep_arguments, "-L") -- Follow symlinks
+
 require("telescope").setup {
+  defaults = {
+    vimgrep_arguments = vimgrep_arguments
+  },
   extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
@@ -13,6 +19,9 @@ require("telescope").setup {
       }
     },
   pickers = {
+    live_grep = {
+      follow = true
+    },
     find_files = {
       follow = true, -- Follow symlinks
       find_command = { -- Find files and directories except for paths in .git and node_modules
