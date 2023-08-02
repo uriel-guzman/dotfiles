@@ -1,5 +1,7 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
-nnoremap <C-y> <cmd>lua require('telescope.builtin').live_grep()<CR>
+nnoremap <C-f> <cmd>lua require('telescope.builtin').live_grep()<CR>
+nnoremap <C-y> <cmd>lua require('telescope.builtin').grep_string()<CR>
+vnoremap <C-y> <cmd>lua require('telescope.builtin').grep_string()<CR>
 
 lua << EOF
 local telescopeConfig = require("telescope.config")
@@ -20,9 +22,10 @@ require("telescope").setup {
     },
   pickers = {
     live_grep = {
-      follow = true
+      path_display={"truncate"},
     },
     find_files = {
+      path_display={"truncate"},
       follow = true, -- Follow symlinks
       find_command = { -- Find files and directories except for paths in .git and node_modules
         "find",
