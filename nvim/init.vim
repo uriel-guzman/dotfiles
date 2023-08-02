@@ -37,10 +37,6 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Fast file switching
 Plug 'ThePrimeagen/harpoon'
 
-" Follow symlinks
-Plug 'aymericbeaumet/vim-symlink'
-Plug 'moll/vim-bbye' " optional dependency
-
 call plug#end()
 
 " Highlight text on yank
