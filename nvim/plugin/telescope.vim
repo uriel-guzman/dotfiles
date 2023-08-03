@@ -10,7 +10,8 @@ table.insert(vimgrep_arguments, "-L") -- Follow symlinks
 
 require("telescope").setup {
   defaults = {
-    vimgrep_arguments = vimgrep_arguments
+    vimgrep_arguments = vimgrep_arguments,
+    path_display={"smart"} 
   },
   extensions = {
     fzf = {
@@ -21,9 +22,6 @@ require("telescope").setup {
       }
     },
   pickers = {
-    live_grep = {
-      path_display={"truncate"},
-    },
     find_files = {
       path_display={"truncate"},
       follow = true, -- Follow symlinks
