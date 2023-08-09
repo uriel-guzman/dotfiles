@@ -11,6 +11,7 @@ set expandtab                  " Use spaces instead of tabs
 set ignorecase                 " Ignore case when searching
 set smartcase                  " If first letter is uppercase then don't ignore case
 set scrolloff=8                " Scroll window when reaching end of view
+set sidescrolloff=8            " Scroll window horizontally when reaching end of view
 set autowrite                  " Save file if modified 
 set nowrap                     " Do not allow lines to wrap 
 set undofile                   " Persistent undoing
