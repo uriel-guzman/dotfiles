@@ -33,12 +33,10 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 
 " Fast file switching
 Plug 'ThePrimeagen/harpoon'
-
-" Git intergration
-Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
