@@ -11,6 +11,7 @@ set expandtab                  " Use spaces instead of tabs
 set ignorecase                 " Ignore case when searching
 set smartcase                  " If first letter is uppercase then don't ignore case
 set scrolloff=8                " Scroll window when reaching end of view
+set sidescrolloff=8            " Scroll window horizontally when reaching end of view
 set autowrite                  " Save file if modified 
 set nowrap                     " Do not allow lines to wrap 
 set undofile                   " Persistent undoing
@@ -19,3 +20,4 @@ set nomagic                    " Literally matches characters like '/' or '[' on
 set splitbelow                 " Make all horizontal splits to go below current window
 set splitright                 " Make all vertical splits to go to the right of current window
 set laststatus=3               " Global statusline
+set updatetime=50              " Speed up percieved performance

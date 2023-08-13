@@ -4,6 +4,7 @@
 
 export VISUAL=nvim;
 export EDITOR=nvim;
+export GIT_EDITOR=nvim;
 
 # ------------------------------------------------------------------------------
 # Competitive programming

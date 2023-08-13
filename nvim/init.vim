@@ -38,6 +38,9 @@ Plug 'nvim-telescope/telescope-live-grep-args.nvim'
 " Fast file switching
 Plug 'ThePrimeagen/harpoon'
 
+" Git support
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 " Highlight text on yank

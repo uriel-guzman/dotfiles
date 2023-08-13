@@ -1,9 +1,16 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { 
+  ensure_installed = {
+    "clangd",
+    "vimls",
+    "bashls",
+    "pyright",
+    "html",
     "jsonls",
     "tsserver",
-    "bashls",
-    "vimls"
+    "intelephense",
+    "jdtls",
+    "html",
+    "lua_ls",
   },
 })
