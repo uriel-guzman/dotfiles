@@ -1,8 +1,8 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
-vnoremap <C-p> "0y<cmd>lua require('telescope.builtin').find_files()<CR><c-r>0<Esc>
+vnoremap <C-p> "0y<cmd>lua require('telescope.builtin').find_files()<CR>i<c-r>0<Esc>
 
 nnoremap <C-f> <cmd>lua require("telescope").extensions.live_grep_args.live_grep_args()<CR>
-vnoremap <C-f> "0y<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR><c-r>0<Esc>
+vnoremap <C-f> "0y<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>i<c-r>0<Esc>
 
 lua << EOF
 local telescopeConfig = require("telescope.config")
