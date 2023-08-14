@@ -41,8 +41,6 @@ require("telescope").setup {
       find_command = { -- Find files and directories except for paths in .git and node_modules
         "find",
         ".", -- Current working directory
-        "-type",
-        "f,d",
         "-not",
         "-path",
         "*/node_modules/*",
