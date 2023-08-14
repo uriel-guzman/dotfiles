@@ -1,13 +1,14 @@
 nnoremap <C-p> <cmd>lua require('telescope.builtin').find_files()<CR>
-vnoremap <C-p> "0y<cmd>lua require('telescope.builtin').find_files()<CR>i<c-r>0<Esc>
+vnoremap <C-p> "0y<cmd>lua require('telescope.builtin').find_files()<CR><c-r>0<Esc>
 
 nnoremap <C-f> <cmd>lua require("telescope").extensions.live_grep_args.live_grep_args()<CR>
-vnoremap <C-f> <cmd>lua require('telescope.builtin').grep_string()<CR>
+vnoremap <C-f> "0y<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR><c-r>0<Esc>
 
 lua << EOF
 local telescopeConfig = require("telescope.config")
 local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
 table.insert(vimgrep_arguments, "-L") -- Follow symlinks
+table.insert(vimgrep_arguments, "-F") -- Search literally
 local lga_actions = require("telescope-live-grep-args.actions")
 
 require("telescope").setup {
@@ -31,10 +32,6 @@ require("telescope").setup {
           ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
         },
       },
-      -- ... also accepts theme settings, for example:
-      -- theme = "dropdown", -- use dropdown theme
-      -- theme = { }, -- use own theme spec
-      -- layout_config = { mirror=true }, -- mirror preview pane
     }
   },
   pickers = {
