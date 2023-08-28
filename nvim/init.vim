@@ -41,6 +41,9 @@ Plug 'ThePrimeagen/harpoon'
 " Git support
 Plug 'tpope/vim-fugitive'
 
+" File explorer
+Plug 'stevearc/oil.nvim'
+
 call plug#end()
 
 " Highlight text on yank
