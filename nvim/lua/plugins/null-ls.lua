@@ -9,6 +9,6 @@ return {
       }
     }
 
-    vim.cmd('map <Leader>f :lua vim.lsp.buf.format()<CR>')
+    vim.keymap.set("n", "<Leader>f", ":lua vim.lsp.buf.format()<CR>")
   end
 }

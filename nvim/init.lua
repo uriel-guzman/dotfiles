@@ -1,6 +1,6 @@
 -- Load modules
-require("config.settings")
 require("config.mappings")
+require("config.settings")
 require("config.autocmds")
 
 -- Lazy.nvim
