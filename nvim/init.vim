@@ -40,6 +40,7 @@ Plug 'ThePrimeagen/harpoon'
 
 " Git support
 Plug 'tpope/vim-fugitive'
+Plug 'lewis6991/gitsigns.nvim'
 
 " File explorer
 Plug 'stevearc/oil.nvim'

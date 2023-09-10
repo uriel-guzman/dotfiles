@@ -70,5 +70,3 @@ done
 }
 
 export -f random
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
