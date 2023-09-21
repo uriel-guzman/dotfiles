@@ -8,11 +8,11 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>")
-    vim.keymap.set("v", "<C-p>", "\"0y:Telescope find_files<CR><c-r>0<Esc>")
+    vim.keymap.set("v", "<C-p>", "\"0y:Telescope find_files<CR><c-r>0<Esc>a")
 
     vim.keymap.set("n", "<C-f>", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
     vim.keymap.set("v", "<C-f>",
-      "\"0y<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR><c-r>0<Esc>")
+      "\"0y<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR><c-r>0<Esc>a")
 
     vim.keymap.set("n", "<C-b>", ":Telescope buffers<CR>")
     vim.keymap.set("n", "<C-\\>", ":Telescope oldfiles<CR>")
