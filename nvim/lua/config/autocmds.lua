@@ -16,9 +16,3 @@ autocmd('BufEnter', {
   pattern = '',
   command = 'set formatoptions-=c formatoptions-=r formatoptions-=o'
 })
-
--- Map unknown filetypes to known filetypes for highlighting
-autocmd('BufRead,BufNewFile', {
-  pattern = '*.c3typ',
-  command = 'set filetype=java'
-})

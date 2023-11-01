@@ -19,6 +19,7 @@ return {
         "jdtls",
         "html",
         "lua_ls",
+        "gopls"
       },
     })
   end

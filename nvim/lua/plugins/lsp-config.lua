@@ -14,6 +14,7 @@ return {
     lspconfig.jdtls.setup{}
     lspconfig.html.setup{}
     lspconfig.lua_ls.setup{}
+    lspconfig.gopls.setup{}
 
     vim.keymap.set("n", "gn", vim.diagnostic.goto_prev)
     vim.keymap.set("n", "gp", vim.diagnostic.goto_next)

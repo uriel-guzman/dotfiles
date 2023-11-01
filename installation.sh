@@ -11,6 +11,7 @@ ln -s "$(pwd)/.alacritty.yml" ~/.alacritty.yml
 # ------------------------------------------------------------------------------
 # Neovim
 # ------------------------------------------------------------------------------
+brew install npm
 brew install neovim
 brew install fzf
 brew install ripgrep
