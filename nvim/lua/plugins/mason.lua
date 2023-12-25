@@ -19,7 +19,8 @@ return {
         "jdtls",
         "html",
         "lua_ls",
-        "gopls"
+        "gopls",
+        "yamlls"
       },
     })
   end

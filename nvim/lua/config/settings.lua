@@ -19,6 +19,5 @@ vim.opt.splitbelow = true                                                     --
 vim.opt.splitright = true                                                     -- Make all vertical splits to go to the right of current window
 vim.opt.laststatus = 3                                                        -- Global statusline
 vim.opt.updatetime = 50                                                       -- Speed up percieved performance
-vim.opt.colorcolumn = "120"                                                   -- Maximum column width
 vim.opt.signcolumn = "auto:3"                                                 -- Maximum amount of things in the sign column
 
